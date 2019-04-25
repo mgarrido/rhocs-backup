@@ -6,7 +6,7 @@
 
 This repository contains unsupported code that can be used in conjunction with Backup and Restore products. The two scripts, rhocs-pre-backup.sh and rhocs-post-backup.sh, have been tested with Commvault Complete Backup and Restore. The rhocs-pre-backup.sh script will find gluster file volumes, create a gluster snapshot for each volume, and then mount the volume on a bastion host that has the backup agent installed. After the backup of the mounted snapshot volume by backup server, the rhocs-post-backup.sh script will unmount the volumes and delete the gluster snapshots.
 
-The two ini files, independent_vars.ini and converged_vars.ini, are used to specify paramaters specific to your deployment. Example for converged_var.ini.
+The two ini files, independent_vars.ini and converged_vars.ini, are used to specify parameters specific to your deployment. Example for converged_var.ini.
 ```
 ## Environment variables for RHOCS Backup: 
 ## Deployment mode for RHOCS cluster: converged (CNS) or independent (CRS)
